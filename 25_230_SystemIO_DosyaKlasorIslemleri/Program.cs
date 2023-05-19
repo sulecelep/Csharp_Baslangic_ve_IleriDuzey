@@ -15,7 +15,8 @@ namespace _25_230_SystemIO_DosyaKlasorIslemleri
             //KlasorVarlikKontrolu(@"C:\Users\CELEP\Desktop\Udemy");
             //KlasorSilmeIslemleri(@"C:\Users\CELEP\Desktop\Udemy");
             //Odev1(@"C:\Users\CELEP\Desktop\Udemy");
-            OdevI();
+            //OdevI();
+            KlasorTasima("C:\\Users\\CELEP\\Desktop\\Udemy", "C:\\Users\\CELEP\\Udemy");
         }
         static void YeniKlasorOlustur(string path)
         {
@@ -96,6 +97,11 @@ namespace _25_230_SystemIO_DosyaKlasorIslemleri
                 }
             }
 
+        }
+
+        static void KlasorTasima(string kaynak , string hedef)
+        {
+            Directory.Move(kaynak, hedef);
         }
     }
 }
